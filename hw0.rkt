@@ -6,5 +6,7 @@
          [distance (+ (* v0 t) (* 0.5 a (* t t)))]) ; d(t) = v0 * t + 1/2 * a * t^2
     distance))
 
+(define (naive-pluralize str) (string-append str "s"))
+
 
 (provide (all-defined-out))
