@@ -11,7 +11,4 @@
 (define (insert-string s i str) ; Given input initial string s, index i and string str, 
   (string-append (substring s 0 (+ i 1)) str (substring s (+ i 1)))) ; append str at the ith index in s!
 
-
-
-
 (provide (all-defined-out))
