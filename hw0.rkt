@@ -6,7 +6,12 @@
          [distance (+ (* v0 t) (* 0.5 a (* t t)))]) ; d(t) = v0 * t + 1/2 * a * t^2
     distance))
 
-(define (naive-pluralize str) (string-append str "s"))
+(define (naive-pluralize str) (string-append str "s")) ; Take the string str and append "s" to the end of it.
+
+(define (insert-string s i str) ; Given input initial string s, index i and string str, 
+  (string-append (substring s 0 (+ i 1)) str (substring s (+ i 1)))) ; append str at the ith index in s!
+
+
 
 
 (provide (all-defined-out))
